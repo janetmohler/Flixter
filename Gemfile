@@ -56,3 +56,6 @@ gem 'simple_form'
 
 #Adding devise gem
 gem 'devise', '>= 3.2.4'
+
+#Adding CarrierWave gem
+gem 'carrierwave'

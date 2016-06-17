@@ -68,3 +68,6 @@ gem 'fog'
 
 #Adding MiniMagick
 gem 'mini_magick', '~> 4.3.1'
+
+#Adding carrierwave-aws
+gem 'carrierwave-aws'

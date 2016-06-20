@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :courses
+  has_many :enrollments
   has_many :enrolled_courses, through: :enrollments, source: :courses
 
   # Include default devise modules. Others available are:

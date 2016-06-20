@@ -15,7 +15,7 @@
 
     <br />
     <br />
-    <%= if current_user && current_user.enrolled_in?(@course) %>
+    <% if current_user && current_user.enrolled_in?(@course) %>
       <h3 class="label label-info">You Are Enrolled!</h3>
     <% else %>    
       <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary', method: :post %>

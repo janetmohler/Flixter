@@ -71,3 +71,6 @@ gem 'mini_magick', '~> 4.3.1'
 
 #Adding carrierwave-aws
 gem 'carrierwave-aws'
+
+#Adding the stripe gem
+gem 'stripe'

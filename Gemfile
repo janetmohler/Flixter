@@ -77,3 +77,6 @@ gem 'stripe'
 
 #Adding ranked-model gem
 gem 'ranked-model'
+
+#Adding jQuery UI
+gem 'jquery-ui-rails'

@@ -1,11 +1,9 @@
 class Instructor::SectionsController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_course, only: [:new, :create]
+  before_action :require_authorized_for_current_course, only: [:create]
   before_action :require_authorized_for_current_section, only: [:update]
 
-  def new
-    @section = Section.new
-  end
+  
 
   def create
     @section = current_course.sections.create(section_params)
@@ -13,9 +11,8 @@ class Instructor::SectionsController < ApplicationController
   end
 
   def update
-    current_course.update_attributes(section_params)
-    #current_section.update_attributes(section_params)
-    render text: 'updated!'
+    current_section.update_attributes(section_params)
+    render text: 'ok!'
   end
 
   private
